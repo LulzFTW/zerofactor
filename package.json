@@ -4,11 +4,14 @@
   "description": "Circumvents Duo two-factor authentication.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify content_scripts/zerofactor.js"
+    "build": "browserify zerofactor.js -o addon/zerofactor.js"
   },
   "author": "lulzftw",
-  "license": "fuck off",
+  "license": "GPL-3.0",
   "devDependencies": {
     "browserify": "^14.4.0"
+  },
+  "dependencies": {
+    "notp": "^2.0.3"
   }
 }

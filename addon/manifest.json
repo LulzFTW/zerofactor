@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.duosecurity.com/frame/prompt*"],
-      "js": ["content_scripts/index.js"],
+      "js": ["zerofactor.js"],
       "all_frames": true
     }
   ],
