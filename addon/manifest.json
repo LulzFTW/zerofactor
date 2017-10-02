@@ -1,0 +1,34 @@
+{
+
+  "manifest_version": 2,
+  "name": "zerofactor",
+  "version": "1.0",
+
+  "description": "Circumvents Duo two-factor authentication.",
+
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.duosecurity.com/frame/prompt*"],
+      "js": ["content_scripts/index.js"],
+      "all_frames": true
+    }
+  ],
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "applications": {
+    "gecko": {
+      "id": "zerofactor@lulzftw.org"
+    }
+  }
+
+}

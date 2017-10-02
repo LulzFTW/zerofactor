@@ -1,0 +1,12 @@
+#content {
+    width: 300px;
+    padding: 5px;
+}
+
+label, input {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "zerofactor",
+  "version": "1.0.0",
+  "description": "Circumvents Duo two-factor authentication.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify content_scripts/zerofactor.js"
+  },
+  "author": "lulzftw",
+  "license": "fuck off",
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  }
+}
