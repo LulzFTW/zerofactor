@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# browserify compiled bundle
+addon/zerofactor.js
+
