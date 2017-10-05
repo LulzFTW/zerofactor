@@ -60,3 +60,6 @@ typings/
 # webpack compiled bundle
 extension/zerofactor.js
 
+# compiled webextension
+web-ext-artifacts/
+
