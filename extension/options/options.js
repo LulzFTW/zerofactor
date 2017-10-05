@@ -1,6 +1,6 @@
 function saveOptions(e) {
   e.preventDefault();
-  browser.storage.sync.set({
+  browser.storage.local.set({
     device: document.querySelector("#device").value,
     secret: document.querySelector("#secret").value,
     counter: document.querySelector("#counter").value
@@ -25,12 +25,12 @@ function restoreOptions() {
     console.log(`Error: ${error}`);
   }
 
-  var getting = browser.storage.sync.get();
+  var getting = browser.storage.local.get();
   getting.then(setCurrentChoice, onError);
 }
 
 document.addEventListener("DOMContentLoaded", restoreOptions);
 document.querySelector("form").addEventListener("submit", saveOptions);
 document.querySelector("form").addEventListener("reset", e => {
-    browser.storage.sync.clear();
+    browser.storage.local.clear();
 });

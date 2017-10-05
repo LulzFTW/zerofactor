@@ -4,14 +4,15 @@
   "description": "Circumvents Duo two-factor authentication.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify zerofactor.js -o addon/zerofactor.js"
+    "build": "webpack"
   },
   "author": "lulzftw",
   "license": "GPL-3.0",
-  "devDependencies": {
-    "browserify": "^14.4.0"
-  },
   "dependencies": {
     "notp": "^2.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "uglify-es-webpack-plugin": "^0.10.0"
   }
 }

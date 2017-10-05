@@ -13,7 +13,7 @@ function onLoad(result) {
   var passcode = notp.hotp.gen(result.secret, {
     counter: counter
   });
-  browser.storage.sync.set({
+  browser.storage.local.set({
     counter: counter + 1
   });
   console.log(passcode);
@@ -27,6 +27,6 @@ function onError(error) {
   console.log(`Error: ${error}`);
 }
 
-var getting = browser.storage.sync.get();
+var getting = browser.storage.local.get();
 getting.then(onLoad, onError);
 
