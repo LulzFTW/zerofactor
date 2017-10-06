@@ -4,7 +4,7 @@
   "description": "Circumvents Duo two-factor authentication.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack && web-ext build -s extension --overwrite-dest"
   },
   "author": "lulzftw",
   "license": "GPL-3.0",
@@ -12,7 +12,6 @@
     "notp": "^2.0.3"
   },
   "devDependencies": {
-    "webpack": "^3.6.0",
-    "uglify-es-webpack-plugin": "^0.10.0"
+    "webpack": "^3.6.0"
   }
 }
