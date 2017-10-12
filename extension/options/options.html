@@ -9,7 +9,13 @@
   <body>
 
     <div id="content">
-        <form>
+        <form id="qr">
+            <label for="url">URL to Duo QR</label>
+            <input id="url" type="text" required>
+            <button id="import" type="submit">Import</button>
+        </form>
+
+        <form id="config">
             <label for="device">Device Name</label>
             <input id="device" type="text" required>
 

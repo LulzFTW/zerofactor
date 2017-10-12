@@ -23,7 +23,10 @@
     "page": "options/options.html"
   },
 
-  "permissions": ["storage"],
+  "permissions": [
+    "https://*.duosecurity.com/*",
+    "storage"
+  ],
 
   "applications": {
     "gecko": {
